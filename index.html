@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Wajeeh Uddin - Chemistry & Data Analytics Portfolio. Aspiring higher studies student in Sweden.">
+    <title>Wajeeh Uddin | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">My Portfolio</div>
+        <a href="#" class="logo"><i class="fas fa-flask"></i> Wajeeh<span>.</span></a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#journey">Journey</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#resources">Resources</a></li>
+            <li><a href="#sweden">Sweden</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="hamburger">
@@ -24,81 +27,250 @@
     </nav>
 
     <header class="hero">
-        <h1>Welcome to My Professional Portfolio</h1>
-        <p>Aspiring Data Analyst & Chemist | Career Goal: Sweden 2029</p>
-        <a href="#projects" class="cta">View My Work</a>
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-graduation-cap"></i> Higher Studies Aspirant</div>
+            <h1>Hi, I'm <span class="highlight">Wajeeh Uddin</span></h1>
+            <p class="hero-subtitle"><span class="typing-text" data-text="Aspiring Data Analyst & Chemist | Sweden 2029"></span><span class="typing-cursor"></span></p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
+                <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Get in Touch</a>
+            </div>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate student pursuing my interests in Chemistry and Data Analytics.</p>
-        <h3>Focus Areas:</h3>
-        <ul>
-            <li>Data Analysis</li>
-            <li>Chemistry Research</li>
-            <li>Machine Learning</li>
-        </ul>
-        <h3>Learning Timeline:</h3>
-        <p>Currently learning advanced data visualization techniques.</p>
+    <section id="about" class="section">
+        <div class="section-header reveal">
+            <span class="section-label">About Me</span>
+            <h2 class="section-title">Passionate About Science & Data</h2>
+            <p class="section-subtitle">A dedicated student combining chemistry knowledge with data analytics to solve real-world problems.</p>
+        </div>
+        <div class="about-grid reveal">
+            <div class="about-image">
+                <div class="about-image-bg"></div>
+                <div class="about-image-main">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>Wajeeh Uddin</h3>
+                    <p>Chemistry & Data Analytics Enthusiast at COMSATS University Islamabad</p>
+                </div>
+            </div>
+            <div class="about-text">
+                <h3>Driven by Curiosity, Focused on Impact</h3>
+                <p>I am currently pursuing my degree in Chemistry at COMSATS University Islamabad, where I have developed a strong foundation in scientific research and analytical thinking.</p>
+                <p>Alongside my chemistry studies, I am deeply invested in data analytics, machine learning, and modern visualization techniques. My goal is to leverage these skills in pharmaceutical and biotech research.</p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="number counter" data-target="2">0</div>
+                        <div class="label">Semesters Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number counter" data-target="4">0</div>
+                        <div class="label">Active Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">2029</div>
+                        <div class="label">Sweden Goal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects Showcase</h2>
-        <article>
-            <h3>Data Visualization Project</h3>
-            <p>A project focusing on visualizing complex datasets.</p>
-        </article>
-        <article>
-            <h3>Chemistry Simulation</h3>
-            <p>Interactive simulation of chemical reactions.</p>
-        </article>
+    <section id="journey" class="section" style="background:#080c18;">
+        <div class="section-header reveal">
+            <span class="section-label">My Path</span>
+            <h2 class="section-title">Education & Journey</h2>
+            <p class="section-subtitle">From Islamabad to Sweden - a roadmap of growth and learning.</p>
+        </div>
+        <div class="timeline reveal">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>2024 - Present</h4>
+                    <h3>BS Chemistry</h3>
+                    <p>COMSATS University Islamabad. Building strong foundations in organic, inorganic, and physical chemistry.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>2025 - Ongoing</h4>
+                    <h3>Data Analytics Bootcamp</h3>
+                    <p>Self-paced learning via DataCamp, Coursera, and Kaggle. Python, SQL, Pandas, NumPy, and visualization.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>2027 - Target</h4>
+                    <h3>Research Internship</h3>
+                    <p>Aim to secure a research position in a pharma or biotech lab to gain hands-on industry experience.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>2029 - Goal</h4>
+                    <h3>Master's in Sweden</h3>
+                    <p>Pursue higher studies in Sweden at a top-ranked university in pharmaceutical sciences or data-driven chemistry.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Data Analysis</li>
-            <li>SQL</li>
-            <li>JavaScript</li>
-        </ul>
+    <section id="projects" class="section">
+        <div class="section-header reveal">
+            <span class="section-label">Portfolio</span>
+            <h2 class="section-title">Projects Showcase</h2>
+            <p class="section-subtitle">A selection of my work combining chemistry and data analytics.</p>
+        </div>
+        <div class="projects-grid reveal">
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-chart-line"></i></div>
+                <div class="project-content">
+                    <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Pandas</span><span class="project-tag">Matplotlib</span></div>
+                    <h3>Chemical Reaction Data Analysis</h3>
+                    <p>Analyzing lab experiment datasets to identify reaction rate patterns and optimize conditions using Python visualization libraries.</p>
+                    <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-database"></i></div>
+                <div class="project-content">
+                    <div class="project-tags"><span class="project-tag">SQL</span><span class="project-tag">PostgreSQL</span></div>
+                    <h3>Lab Management Database</h3>
+                    <p>A relational database design for tracking chemical inventory, experiments, and results in a research laboratory.</p>
+                    <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-brain"></i></div>
+                <div class="project-content">
+                    <div class="project-tags"><span class="project-tag">ML</span><span class="project-tag">Scikit-Learn</span></div>
+                    <h3>Predictive Reaction Model</h3>
+                    <p>Building a regression model to predict chemical reaction outcomes based on input parameters and historical data.</p>
+                    <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="resources">
-        <h2>Resources</h2>
-        <p>Here are some resources I've found helpful:</p>
-        <ul>
-            <li><a href="https://www.kaggle.com" target="_blank">Kaggle</a></li>
-            <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
-        </ul>
+    <section id="skills" class="section" style="background:#080c18;">
+        <div class="section-header reveal">
+            <span class="section-label">Expertise</span>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">Tools and technologies I use to bring ideas to life.</p>
+        </div>
+        <div class="skills-container reveal">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <p>Pandas, NumPy, Matplotlib, and Jupyter notebooks for data analysis.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>SQL</h3>
+                    <p>PostgreSQL, query optimization, and database schema design.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-flask"></i></div>
+                    <h3>Chemistry</h3>
+                    <p>Organic, inorganic, and physical chemistry fundamentals.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Data Visualization</h3>
+                    <p>Creating insightful dashboards and charts for scientific data.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h3>JavaScript</h3>
+                    <p>Building interactive web interfaces and data-driven apps.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="60%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Machine Learning</h3>
+                    <p>Regression, classification, and predictive modeling basics.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="55%"></div></div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: wajeehudin663@example.com</p>
+    <section id="sweden" class="section sweden-section">
+        <div class="section-header reveal">
+            <span class="section-label">Dream Destination</span>
+            <h2 class="section-title">Why Sweden?</h2>
+            <p class="section-subtitle">Sweden offers world-class education, cutting-edge research, and an innovation-driven environment perfect for my goals.</p>
+        </div>
+        <div class="sweden-grid reveal">
+            <div class="sweden-card">
+                <div class="icon"><i class="fas fa-university"></i></div>
+                <h3>Top Universities</h3>
+                <p>Karolinska Institutet, Uppsala University, and Lund University are globally renowned for chemistry and life sciences.</p>
+            </div>
+            <div class="sweden-card">
+                <div class="icon"><i class="fas fa-microscope"></i></div>
+                <h3>Research Excellence</h3>
+                <p>Sweden is a hub for pharmaceutical and biotech innovation, with strong ties between academia and industry.</p>
+            </div>
+            <div class="sweden-card">
+                <div class="icon"><i class="fas fa-globe-europe"></i></div>
+                <h3>Inclusive Culture</h3>
+                <p>A welcoming, English-friendly environment with high quality of life and strong support for international students.</p>
+            </div>
+            <div class="sweden-card">
+                <div class="icon"><i class="fas fa-leaf"></i></div>
+                <h3>Sustainability Focus</h3>
+                <p>Green chemistry and sustainable research practices are at the core of Swedish scientific culture.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section" style="background:#080c18;">
+        <div class="section-header reveal">
+            <span class="section-label">Connect</span>
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Let's connect and discuss chemistry, data, or opportunities in Sweden.</p>
+        </div>
+        <div class="contact-grid reveal">
+            <div class="contact-info">
+                <h3>Let's Build Something Together</h3>
+                <p>I am always open to collaborating on research ideas, data projects, or discussions about studying in Sweden.</p>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div><a href="mailto:wajeehudin663@gmail.com">wajeehudin663@gmail.com</a></div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div><a href="https://github.com/wajeehudin663-a11y" target="_blank">github.com/wajeehudin663-a11y</a></div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>Islamabad, Pakistan &rarr; Sweden 2029</div>
+                </div>
+            </div>
+            <div class="contact-visual">
+                <div class="contact-box">
+                    <i class="fas fa-paper-plane"></i>
+                    <h4>Ready to Connect?</h4>
+                    <p>Drop me an email and I will get back to you as soon as possible.</p>
+                    <a href="mailto:wajeehudin663@gmail.com" class="btn btn-primary" style="margin-top:10px;"><i class="fas fa-envelope"></i> Send Email</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Wajeeh Uddin</p>
+        <p>&copy; 2026 Wajeeh Uddin. Built with passion for Sweden.</p>
     </footer>
 
     <script src="scripts.js"></script>
 </body>
 </html>
-
-<style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-.navbar { display: flex; justify-content: space-between; padding: 20px; background: linear-gradient(to right, #00c6ff, #0072ff); position: sticky; top: 0; }
-.nav-links { list-style: none; display: flex; gap: 15px; }
-.hamburger { display: none; flex-direction: column; cursor: pointer; }
-.hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(to right, #00c6ff, #0072ff); color: #fff; text-align: center; }
-section { padding: 50px; }
-footer { text-align: center; padding: 20px; background: #333; color: #fff; }
-@media (max-width: 768px) { .nav-links { display: none; } .hamburger { display: flex; } }
-</style>
-
-<script>
-document.querySelector('.hamburger').addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.toggle('active');
-});
-</script>
