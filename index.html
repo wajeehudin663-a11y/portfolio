@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to My Professional Portfolio</h1>
+        <p>Aspiring Data Analyst & Chemist | Career Goal: Sweden 2029</p>
+        <a href="#projects" class="cta">View My Work</a>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate student pursuing my interests in Chemistry and Data Analytics.</p>
+        <h3>Focus Areas:</h3>
+        <ul>
+            <li>Data Analysis</li>
+            <li>Chemistry Research</li>
+            <li>Machine Learning</li>
+        </ul>
+        <h3>Learning Timeline:</h3>
+        <p>Currently learning advanced data visualization techniques.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects Showcase</h2>
+        <article>
+            <h3>Data Visualization Project</h3>
+            <p>A project focusing on visualizing complex datasets.</p>
+        </article>
+        <article>
+            <h3>Chemistry Simulation</h3>
+            <p>Interactive simulation of chemical reactions.</p>
+        </article>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Data Analysis</li>
+            <li>SQL</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>Here are some resources I've found helpful:</p>
+        <ul>
+            <li><a href="https://www.kaggle.com" target="_blank">Kaggle</a></li>
+            <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: wajeehudin663@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Wajeeh Uddin</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<style>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+.navbar { display: flex; justify-content: space-between; padding: 20px; background: linear-gradient(to right, #00c6ff, #0072ff); position: sticky; top: 0; }
+.nav-links { list-style: none; display: flex; gap: 15px; }
+.hamburger { display: none; flex-direction: column; cursor: pointer; }
+.hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(to right, #00c6ff, #0072ff); color: #fff; text-align: center; }
+section { padding: 50px; }
+footer { text-align: center; padding: 20px; background: #333; color: #fff; }
+@media (max-width: 768px) { .nav-links { display: none; } .hamburger { display: flex; } }
+</style>
+
+<script>
+document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+</script>
